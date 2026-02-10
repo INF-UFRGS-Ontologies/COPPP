@@ -1,0 +1,63 @@
+Prefix(:=<https://www.inf.ufrgs.br/ontologies/coppp/imports/iof-core_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://www.inf.ufrgs.br/ontologies/coppp/imports/iof-core_import.owl>
+<https://www.inf.ufrgs.br/ontologies/coppp/releases/2026-02-02/imports/iof-core_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://spec.industrialontologies.org/ontology/202502/core/Core/>)
+Annotation(owl:versionInfo "2026-02-02")
+
+Declaration(Class(<https://spec.industrialontologies.org/ontology/construct/MaturityLevel>))
+Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/individual/Provisional>))
+Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/individual/Released>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.org/dc/terms/description> (description)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "description"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/license> (license)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/title> (title)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title"@en-us)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://spec.industrialontologies.org/ontology/construct/MaturityLevel> (maturity level)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/construct/MaturityLevel> "maturity level"@en-us)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://spec.industrialontologies.org/ontology/individual/Provisional> (provisional)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/individual/Provisional> "provisional"@en-us)
+ClassAssertion(<https://spec.industrialontologies.org/ontology/construct/MaturityLevel> <https://spec.industrialontologies.org/ontology/individual/Provisional>)
+
+# Individual: <https://spec.industrialontologies.org/ontology/individual/Released> (released)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/individual/Released> "released"@en-us)
+ClassAssertion(<https://spec.industrialontologies.org/ontology/construct/MaturityLevel> <https://spec.industrialontologies.org/ontology/individual/Released>)
+
+
+)

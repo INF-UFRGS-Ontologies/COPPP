@@ -1,0 +1,46 @@
+## Configurações Gerais ##
+id: coppp
+title: Core Ontology of Petroleum Production Plants
+description: "A domain-core ontology for petroleum production plants developed using the LOT methodology 
+  and ODK framework. It provides a foundational semantic layer specializing BFO and IOF-Core, 
+  aligning with industrial standards including ISO 15926-4, ISO 14224, CFIHOS, and DEXPI 
+  to support interoperability throughout the asset lifecycle."
+uribase: https://www.inf.ufrgs.br/ontologies
+license: https://opensource.org/license/mit
+creators:
+  - Nicolau Oyhenard dos Santos
+contributors:
+  - Haroldo Rojas
+  - Mara Abel
+  - Cauã Roca Antunes
+
+## Configurações do Github ##
+github_org: INF-UFRGS-Ontologies
+repo: coppp
+git_main_branch: master
+
+## Configurações do Pipeline ODK ##
+ci:
+  - github_actions
+
+export_formats:
+  - owl
+  - ttl
+
+release_artefacts:
+  - base
+  - full
+  - simple
+
+# Sintaxe oficial em OWL/XML
+primary_release: full
+
+## Ontologias a serem importadas
+import_group:
+  products:
+    - id: bfo
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl
+    - id: iof-core
+      mirror_from: https://spec.industrialontologies.org/ontology/202502/core/Core/    
+    - id: geocore
+      mirror_from: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl

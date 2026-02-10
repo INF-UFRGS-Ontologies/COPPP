@@ -1,0 +1,128 @@
+?cls	?pred	?val	?synType
+<http://purl.obolibrary.org/obo/BFO_0000202>	<http://www.w3.org/2000/01/rdf-schema#label>	"temporal interval"@en	
+<http://purl.obolibrary.org/obo/BFO_0000141>	<http://www.w3.org/2000/01/rdf-schema#label>	"immaterial entity"@en	
+<http://purl.obolibrary.org/obo/BFO_0000020>	<http://www.w3.org/2000/01/rdf-schema#label>	"specifically dependent continuant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"process"@en	
+<http://purl.obolibrary.org/obo/BFO_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"spatial region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000148>	<http://www.w3.org/2000/01/rdf-schema#label>	"zero-dimensional temporal region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"@en	
+<http://purl.obolibrary.org/obo/BFO_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"independent continuant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000027>	<http://www.w3.org/2000/01/rdf-schema#label>	"object aggregate"@en	
+<http://purl.obolibrary.org/obo/BFO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"material entity"@en	
+<http://purl.obolibrary.org/obo/BFO_0000147>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat point"@en	
+<http://purl.obolibrary.org/obo/BFO_0000034>	<http://www.w3.org/2000/01/rdf-schema#label>	"function"@en	
+<http://purl.obolibrary.org/obo/BFO_0000026>	<http://www.w3.org/2000/01/rdf-schema#label>	"one-dimensional spatial region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"realizable entity"@en	
+<http://purl.obolibrary.org/obo/BFO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000142>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat line"@en	
+<http://purl.obolibrary.org/obo/BFO_0000140>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant fiat boundary"@en	
+<http://purl.obolibrary.org/obo/BFO_0000145>	<http://www.w3.org/2000/01/rdf-schema#label>	"relational quality"@en	
+<http://purl.obolibrary.org/obo/BFO_0000024>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat object part"@en	
+<http://purl.obolibrary.org/obo/BFO_0000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"generically dependent continuant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000018>	<http://www.w3.org/2000/01/rdf-schema#label>	"zero-dimensional spatial region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"occurrent"@en	
+<http://purl.obolibrary.org/obo/BFO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"one-dimensional temporal region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000146>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat surface"@en	
+<http://purl.obolibrary.org/obo/BFO_0000182>	<http://www.w3.org/2000/01/rdf-schema#label>	"history"@en	
+<http://purl.obolibrary.org/obo/BFO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"entity"@en	
+<http://purl.obolibrary.org/obo/BFO_0000028>	<http://www.w3.org/2000/01/rdf-schema#label>	"three-dimensional spatial region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000009>	<http://www.w3.org/2000/01/rdf-schema#label>	"two-dimensional spatial region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"spatiotemporal region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"role"@en	
+<http://purl.obolibrary.org/obo/BFO_0000030>	<http://www.w3.org/2000/01/rdf-schema#label>	"object"@en	
+<http://purl.obolibrary.org/obo/BFO_0000203>	<http://www.w3.org/2000/01/rdf-schema#label>	"temporal instant"@en	
+<http://purl.obolibrary.org/obo/BFO_0000035>	<http://www.w3.org/2000/01/rdf-schema#label>	"process boundary"@en	
+<http://purl.obolibrary.org/obo/BFO_0000029>	<http://www.w3.org/2000/01/rdf-schema#label>	"site"@en	
+<http://purl.obolibrary.org/obo/BFO_0000008>	<http://www.w3.org/2000/01/rdf-schema#label>	"temporal region"@en	
+<http://purl.obolibrary.org/obo/BFO_0000016>	<http://www.w3.org/2000/01/rdf-schema#label>	"disposition"@en	
+<https://spec.industrialontologies.org/ontology/construct/ComputingProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"computing process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/CommercialService>	<http://www.w3.org/2000/01/rdf-schema#label>	"commercial service"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/OrganizationIdentifier>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization identifier"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/BuyingBusinessProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"buying business process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/BuyerRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"buyer role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/BusinessProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"business process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialResourceRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"material resource role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/BusinessOrganization>	<http://www.w3.org/2000/01/rdf-schema#label>	"business organization"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MeasurementInformationContentEntity>	<http://www.w3.org/2000/01/rdf-schema#label>	"measurement information content entity"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialArtifact>	<http://www.w3.org/2000/01/rdf-schema#label>	"material artifact"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ProcessCharacteristic>	<http://www.w3.org/2000/01/rdf-schema#label>	"process characteristic"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/PlannedProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"planned process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/DesignativeInformationContentEntity>	<http://www.w3.org/2000/01/rdf-schema#label>	"designative information content entity"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Capability>	<http://www.w3.org/2000/01/rdf-schema#label>	"capability"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MeasuredValueExpression>	<http://www.w3.org/2000/01/rdf-schema#label>	"measured value expression"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MeasurementProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"measurement process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ValueExpression>	<http://www.w3.org/2000/01/rdf-schema#label>	"value expression"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Manufacturer>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturer"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaintainableMaterialItem>	<http://www.w3.org/2000/01/rdf-schema#label>	"maintainable material item"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ActionSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"action specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialResource>	<http://www.w3.org/2000/01/rdf-schema#label>	"material resource"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/PlanSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"plan specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialProductRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"material product role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/TemporalDurationValueExpression>	<http://www.w3.org/2000/01/rdf-schema#label>	"temporal duration value expression"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ProcuringBusinessProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"procuring business process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/TemporalInstantValueExpression>	<http://www.w3.org/2000/01/rdf-schema#label>	"temporal instant value expression"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialLocationChangeProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"material location change process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/System>	<http://www.w3.org/2000/01/rdf-schema#label>	"system"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Organization>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ManufacturingProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturing process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Person>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Agreement>	<http://www.w3.org/2000/01/rdf-schema#label>	"agreement"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/SellingBusinessProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"offering for sale business process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/PieceOfEquipment>	<http://www.w3.org/2000/01/rdf-schema#label>	"piece of equipment"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialComponentRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"material component role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ProductProductionProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"product production process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Event>	<http://www.w3.org/2000/01/rdf-schema#label>	"event"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Customer>	<http://www.w3.org/2000/01/rdf-schema#label>	"customer"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/InformationContentEntity>	<http://www.w3.org/2000/01/rdf-schema#label>	"information content entity"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialProduct>	<http://www.w3.org/2000/01/rdf-schema#label>	"material product"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Algorithm>	<http://www.w3.org/2000/01/rdf-schema#label>	"algorithm"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/DesignSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"design specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/GainOfRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"gain of role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/DirectiveInformationContentEntity>	<http://www.w3.org/2000/01/rdf-schema#label>	"directive information content entity"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/EncodedAlgorithm>	<http://www.w3.org/2000/01/rdf-schema#label>	"encoded algorithm"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/BusinessFunction>	<http://www.w3.org/2000/01/rdf-schema#label>	"business function"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/LossOfRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"loss of role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/EngineeredSystem>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineered system"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/PhysicalLocationIdentifier>	<http://www.w3.org/2000/01/rdf-schema#label>	"physical location identifier"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/SupplierRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"supplier role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/CommercialServiceSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"commercial service specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ServiceProviderRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"service provider role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/SupplyingBusinessProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"supplying business process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/CustomerRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"customer role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/RawMaterial>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw material"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ServiceProvider>	<http://www.w3.org/2000/01/rdf-schema#label>	"service provider"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/CommercialServiceAgreement>	<http://www.w3.org/2000/01/rdf-schema#label>	"commercial service agreement"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Buyer>	<http://www.w3.org/2000/01/rdf-schema#label>	"buyer"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialComponent>	<http://www.w3.org/2000/01/rdf-schema#label>	"material component"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Agent>	<http://www.w3.org/2000/01/rdf-schema#label>	"agent"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Assembly>	<http://www.w3.org/2000/01/rdf-schema#label>	"assembly"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ObjectiveSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"objective specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/GroupOfAgents>	<http://www.w3.org/2000/01/rdf-schema#label>	"group of agents"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/AgentRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"agent role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/OrganizedGroupOfAgents>	<http://www.w3.org/2000/01/rdf-schema#label>	"organized group of agents"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/ManufacturerRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturer role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/EquipmentRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"equipment role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/AssemblyProcess>	<http://www.w3.org/2000/01/rdf-schema#label>	"assembly process"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/RequirementSpecification>	<http://www.w3.org/2000/01/rdf-schema#label>	"requirement specification"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/GroupOfPersons>	<http://www.w3.org/2000/01/rdf-schema#label>	"group of persons"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaintainableMaterialItemRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"maintainable material item role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Supplier>	<http://www.w3.org/2000/01/rdf-schema#label>	"supplier"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/RawMaterialRole>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw material role"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MeasurementCapability>	<http://www.w3.org/2000/01/rdf-schema#label>	"measurement capability"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/DesignedFunction>	<http://www.w3.org/2000/01/rdf-schema#label>	"designed function"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/DescriptiveInformationContentEntity>	<http://www.w3.org/2000/01/rdf-schema#label>	"descriptive information content entity"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaterialState>	<http://www.w3.org/2000/01/rdf-schema#label>	"material state"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/Identifier>	<http://www.w3.org/2000/01/rdf-schema#label>	"identifier"@en-us	
+<https://spec.industrialontologies.org/ontology/construct/MaturityLevel>	<http://www.w3.org/2000/01/rdf-schema#label>	"maturity level"@en-us	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological structure"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological contact"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010>	<http://www.w3.org/2000/01/rdf-schema#label>	"unconsolidated earth material"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological time interval"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological age"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008>	<http://www.w3.org/2000/01/rdf-schema#label>	"amount of rock"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological process"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>	<http://www.w3.org/2000/01/rdf-schema#label>	"earth fluid"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"amount of mineral"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"earth material"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological boundary"@en	
+<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"geological object"@en	
