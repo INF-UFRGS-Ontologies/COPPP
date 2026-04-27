@@ -8,6 +8,7 @@
 @prefix copi: <https://www.inf.ufrgs.br/ontologies/copi/COPI_> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix copi1: <https://www.inf.ufrgs.br/ontologies/copi/> .
 @prefix iof-av: <https://spec.industrialontologies.org/ontology/annotation/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix iof-core: <https://spec.industrialontologies.org/ontology/construct/> .
@@ -55,8 +56,191 @@ dcterms:license rdf:type owl:AnnotationProperty .
 dcterms:title rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/firstOrderLogicAxiom
+iof-av:firstOrderLogicAxiom rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/isPrimitive
+iof-av:isPrimitive rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/naturalLanguageDefinition
+iof-av:naturalLanguageDefinition rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/primitiveRationale
+iof-av:primitiveRationale rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/annotation/semiFormalNaturalLanguageAxiom
+iof-av:semiFormalNaturalLanguageAxiom rdf:type owl:AnnotationProperty .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000045
+copi1:COPI_0000045 rdf:type owl:AnnotationProperty ;
+                   rdfs:label "iso15926Reference"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000046
+copi1:COPI_0000046 rdf:type owl:AnnotationProperty ;
+                   rdfs:label "iso14224Reference"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000047
+copi1:COPI_0000047 rdf:type owl:AnnotationProperty ;
+                   rdfs:label "cfihosReference"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000048
+copi1:COPI_0000048 rdf:type owl:AnnotationProperty ;
+                   rdfs:label "dexpiReference"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000049
+copi1:COPI_0000049 rdf:type owl:AnnotationProperty ;
+                   rdfs:label "poscCaesarReference"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000054
+<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/hasComponentPartAtAllTimes
+iof-core:hasComponentPartAtAllTimes rdf:type owl:ObjectProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/hasFunction
+iof-core:hasFunction rdf:type owl:ObjectProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/hasInput
+iof-core:hasInput rdf:type owl:ObjectProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/hasOutput
+iof-core:hasOutput rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://spec.industrialontologies.org/ontology/construct/DesignedFunction
+iof-core:DesignedFunction rdf:type owl:Class .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/MaterialArtifact
+iof-core:MaterialArtifact rdf:type owl:Class .
+
+
+###  https://spec.industrialontologies.org/ontology/construct/PlannedProcess
+iof-core:PlannedProcess rdf:type owl:Class .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/COPI_0000001
+copi1:COPI_0000001 rdf:type owl:Class ;
+                   rdfs:subClassOf iof-core:MaterialArtifact ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:hasComponentPartAtAllTimes ;
+                                     owl:someValuesFrom copi1:FlowControlElement
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:hasComponentPartAtAllTimes ;
+                                     owl:someValuesFrom copi1:Seat
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:hasComponentPartAtAllTimes ;
+                                     owl:someValuesFrom copi1:ValveBody
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:hasFunction ;
+                                     owl:someValuesFrom copi1:FlowControlFunction
+                                   ] ;
+                   owl:disjointWith copi1:Compressor ,
+                                    copi1:Pump ,
+                                    copi1:Turbine ;
+                   rdfs:label "valve"@en ;
+                   skos:definition "[CFIHOS] A fluid regulator that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream."@en ,
+                                   "[ISO 15926-4] A <VALVE> is a <FLUID REGULATOR> that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream"@en ,
+                                   "[OnePetro] Any of several valves:  plug, gate, butterfly, needle, etc., used in oil field operations."@en ,
+                                   "[POSC Caesar] A fluid regulator that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream."@en ;
+                   iof-av:firstOrderLogicAxiom "∀x(Valve(x) ↔ MaterialArtifact(x) ∧ ∃f(FlowControlFunction(f) ∧ bearerOf(x,f)))"@en ;
+                   iof-av:isPrimitive "true"^^xsd:boolean ;
+                   iof-av:naturalLanguageDefinition "A valve is a material artifact that bears a flow control function to permit, obstruct, regulate, or divert fluid streams."@en ,
+                                                    "Uma válvula é um artefato material que possui uma função de controle de fluxo para permitir, obstruir, regular ou desviar correntes de fluido."@pt ;
+                   iof-av:primitiveRationale "Might be too restrictive to define as sufficient being a material artifact and having a flow control function."@en ;
+                   iof-av:semiFormalNaturalLanguageAxiom "Every valve is a material artifact that has the function to control fluid flow by permitting, obstructing, regulating, or diverting fluid streams."@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/Compressor
+copi1:Compressor rdf:type owl:Class .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/FlowControlElement
+copi1:FlowControlElement rdf:type owl:Class ;
+                         rdfs:subClassOf iof-core:MaterialArtifact ;
+                         rdfs:label "flow control element"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/FlowControlFunction
+copi1:FlowControlFunction rdf:type owl:Class ;
+                          rdfs:subClassOf iof-core:DesignedFunction ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                            owl:allValuesFrom copi1:FlowControlProcess
+                                          ] ;
+                          rdfs:label "flow control function"@en ;
+                          iof-av:naturalLanguageDefinition "A valve is a material artifact that bears a flow control function to permit, obstruct, regulate, or divert fluid streams."@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/FlowControlProcess
+copi1:FlowControlProcess rdf:type owl:Class ;
+                         rdfs:subClassOf iof-core:PlannedProcess ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty iof-core:hasInput ;
+                                           owl:someValuesFrom copi1:FluidPortion
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty iof-core:hasOutput ;
+                                           owl:someValuesFrom copi1:FluidPortion
+                                         ] ;
+                         rdfs:label "flow control process"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/FluidPortion
+copi1:FluidPortion rdf:type owl:Class .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/Pump
+copi1:Pump rdf:type owl:Class .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/Seat
+copi1:Seat rdf:type owl:Class ;
+           rdfs:subClassOf iof-core:MaterialArtifact ;
+           rdfs:label "seat"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/Turbine
+copi1:Turbine rdf:type owl:Class .
+
+
+###  https://www.inf.ufrgs.br/ontologies/copi/ValveBody
+copi1:ValveBody rdf:type owl:Class ;
+                rdfs:subClassOf iof-core:MaterialArtifact ;
+                rdfs:label "valve body"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -332,6 +332,145 @@
         <annotation:explanatoryNote>By introducing the condition that it must exist at the end of the process materials that only transitively exist during the process (e.g., reaction intermediary) are excluded from being considered the output.</annotation:explanatoryNote>
         <annotation:naturalLanguageDefinition xml:lang="en-us">relation from a process to someone or something physical or digital (continuant) that participates in the process such that it is generated or modified during the process, and that it exists at the end of the process</annotation:naturalLanguageDefinition>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/COPI_0000001 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/COPI_0000001">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasComponentPartAtAllTimes"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/FlowControlElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasComponentPartAtAllTimes"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/Seat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasComponentPartAtAllTimes"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/ValveBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/FlowControlFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/Compressor"/>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/Pump"/>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/Turbine"/>
+        <rdfs:label xml:lang="en">valve</rdfs:label>
+        <skos:definition xml:lang="en">[CFIHOS] A fluid regulator that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream.</skos:definition>
+        <skos:definition xml:lang="en">[ISO 15926-4] A &lt;VALVE&gt; is a &lt;FLUID REGULATOR&gt; that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream</skos:definition>
+        <skos:definition xml:lang="en">[OnePetro] Any of several valves:  plug, gate, butterfly, needle, etc., used in oil field operations.</skos:definition>
+        <skos:definition xml:lang="en">[POSC Caesar] A fluid regulator that can be used to control (i.e. permit, obstruct, regulate or divert) a fluid stream.</skos:definition>
+        <annotation:firstOrderLogicAxiom xml:lang="en">∀x(Valve(x) ↔ MaterialArtifact(x) ∧ ∃f(FlowControlFunction(f) ∧ bearerOf(x,f)))</annotation:firstOrderLogicAxiom>
+        <annotation:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</annotation:isPrimitive>
+        <annotation:naturalLanguageDefinition xml:lang="en">A valve is a material artifact that bears a flow control function to permit, obstruct, regulate, or divert fluid streams.</annotation:naturalLanguageDefinition>
+        <annotation:naturalLanguageDefinition xml:lang="pt">Uma válvula é um artefato material que possui uma função de controle de fluxo para permitir, obstruir, regular ou desviar correntes de fluido.</annotation:naturalLanguageDefinition>
+        <annotation:primitiveRationale xml:lang="en">Might be too restrictive to define as sufficient being a material artifact and having a flow control function.</annotation:primitiveRationale>
+        <annotation:semiFormalNaturalLanguageAxiom xml:lang="en">Every valve is a material artifact that has the function to control fluid flow by permitting, obstructing, regulating, or diverting fluid streams.</annotation:semiFormalNaturalLanguageAxiom>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/Compressor -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/Compressor"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/FlowControlElement -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/FlowControlElement">
+        <rdfs:label xml:lang="en">flow control element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/FlowControlFunction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/FlowControlFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/FlowControlProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">flow control function</rdfs:label>
+        <annotation:naturalLanguageDefinition xml:lang="en">A valve is a material artifact that bears a flow control function to permit, obstruct, regulate, or divert fluid streams.</annotation:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/FlowControlProcess -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/FlowControlProcess">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasInput"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/FluidPortion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/construct/hasOutput"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/copi/FluidPortion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">flow control process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/FluidPortion -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/FluidPortion"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/Pump -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/Pump"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/Seat -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/Seat">
+        <rdfs:label xml:lang="en">seat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/Turbine -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/Turbine"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/copi/ValveBody -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/copi/ValveBody">
+        <rdfs:label xml:lang="en">valve body</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
