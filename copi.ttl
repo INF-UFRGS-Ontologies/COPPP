@@ -14,11 +14,11 @@
 @base <https://www.inf.ufrgs.br/ontologies/copi.ttl> .
 
 <https://www.inf.ufrgs.br/ontologies/copi.ttl> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://www.inf.ufrgs.br/ontologies/copi/releases/2026-04-15/copi.ttl> ;
+                                                owl:versionIRI <https://www.inf.ufrgs.br/ontologies/copi/releases/2026-04-27/copi.ttl> ;
                                                 dcterms:description "A domain-core ontology for petroleum production plants developed using the LOT methodology and ODK framework. It provides a foundational semantic layer specializing BFO and IOF-Core, aligning with industrial standards including ISO 15926-4, ISO 14224, CFIHOS, and DEXPI to support interoperability throughout the asset lifecycle." ;
                                                 dcterms:license <https://opensource.org/license/mit> ;
                                                 dcterms:title "Core Ontology of Petroleum Installations" ;
-                                                owl:versionInfo "2026-04-15" .
+                                                owl:versionInfo "2026-04-27" .
 
 #################################################################
 #    Annotation properties
